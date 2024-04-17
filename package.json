@@ -24,7 +24,7 @@
     "web": "expo start --web",
     "build": "next build"
   },
-  "name": "nextjs-expo",
+  "name": "expo-nextjs-example",
   "version": "1.0.0",
   "private": true
 }
