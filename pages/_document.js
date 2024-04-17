@@ -1,6 +1,7 @@
 import { Children } from "react";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import { AppRegistry } from "react-native-web";
+import { PwaHeaders } from "/PwaHeaders.jsx";
 
 // Follows the setup for react-native-web:
 // https://necolas.github.io/react-native-web/docs/setup/#root-element
@@ -49,7 +50,9 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html style={{ height: "100%" }}>
-        <Head />
+        <Head>
+          <PwaHeaders />
+        </Head>
         <body style={{ height: "100%", overflow: "hidden" }}>
           <Main />
           <NextScript />
